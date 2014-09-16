@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="8" time="0.564" errors="0" skipped="0" tests="48" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_31\jre\bin"/>
+    <property name="java.vm.version" value="20.6-b01"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\jack\Desktop\XCOM\directory-file-service"/>
+    <property name="java.runtime.version" value="1.6.0_31-b05"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_31\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\jack\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\jack\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2014391211000289337.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_31\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.6.0_31/jre/bin/client;C:/Program Files/Java/jdk1.6.0_31/jre/bin;C:/Program Files/Java/jdk1.6.0_31/jre/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Java\jdk1.6.0_31\bin;F:\Java\LIB\apache-ant-1.8.4-bin\apache-ant-1.8.4\bin;c:\Program Files\Common Files\Ulead Systems\MPEG;C:\Program Files\MySQL\MySQL Server 6.0\bin;C:\Program Files\QuickTime\QTSystem\;C:\Oracle\Middleware\;F:\Misc\apache-maven-3.1.1\\bin;F:\Java\IDE\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\jack"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="user.name" value="jack"/>
+    <property name="java.class.path" value="/F:/Java/IDE/eclipse/configuration/org.eclipse.osgi/bundles/1186/1/.cp/jars/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_31\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s C:\Users\jack\.m2\settings.xml install"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.6.0_31"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_31\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_31\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_31\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_31\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_31\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_31\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_31\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_31\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_31\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="maven.home" value="C:\Users\jack\Desktop\XCOM\directory-file-service\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="maven.bootclasspath" value="/F:/Java/IDE/eclipse/configuration/org.eclipse.osgi/bundles/1186/1/.cp/jars/plexus-classworlds-2.4.jar"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0" classname="org.grapeCity.restAssignment.service.DirectoryServiceImplTest" name="testDirectoryServiceImpl_1 on instance testDirectoryServiceImpl_1"/>
+  <testcase time="0.01" classname="org.grapeCity.restAssignment.service.DirectoryServiceImplTest" name="testGetDirectoryList_1 on instance testGetDirectoryList_1">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_1(DirectoryServiceImplTest.java:43)
+</failure>
+    <system-out>01:00:42,146  WARN DirectoryServiceImpl:90 - getDirectoryList(): Requested input path doesn&apos;t have any directory or is not a valid directory.
+</system-out>
+  </testcase>
+  <testcase time="0.01" classname="org.grapeCity.restAssignment.service.DirectoryServiceImplTest" name="testGetDirectoryList_2 on instance testGetDirectoryList_2">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_2(DirectoryServiceImplTest.java:63)
+</failure>
+    <system-out>01:00:42,151  WARN DirectoryServiceImpl:90 - getDirectoryList(): Requested input path doesn&apos;t have any directory or is not a valid directory.
+</system-out>
+  </testcase>
+  <testcase time="0.013" classname="org.grapeCity.restAssignment.service.DirectoryServiceImplTest" name="testGetDirectoryList_3 on instance testGetDirectoryList_3">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_3(DirectoryServiceImplTest.java:83)
+</failure>
+    <system-out>01:00:42,153  WARN DirectoryServiceImpl:90 - getDirectoryList(): Requested input path doesn&apos;t have any directory or is not a valid directory.
+</system-out>
+  </testcase>
+  <testcase time="0.014" classname="org.grapeCity.restAssignment.service.DirectoryServiceImplTest" name="testGetDirectoryList_4 on instance testGetDirectoryList_4">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_4(DirectoryServiceImplTest.java:103)
+</failure>
+    <system-out>01:00:42,156  WARN DirectoryServiceImpl:90 - getDirectoryList(): Requested input path doesn&apos;t have any directory or is not a valid directory.
+</system-out>
+  </testcase>
+  <testcase time="0.016" classname="org.grapeCity.restAssignment.service.DirectoryServiceImplTest" name="testGetFileDetails_1 on instance testGetFileDetails_1">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_1(DirectoryServiceImplTest.java:127)
+</failure>
+    <system-out>01:00:42,157  WARN DirectoryServiceImpl:61 - getFiles(): Requested input path doesn&apos;t have a file name or is not a valid file.
+</system-out>
+  </testcase>
+  <testcase time="0.016" classname="org.grapeCity.restAssignment.service.DirectoryServiceImplTest" name="testGetFileDetails_2 on instance testGetFileDetails_2">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_2(DirectoryServiceImplTest.java:147)
+</failure>
+    <system-out>01:00:42,159  WARN DirectoryServiceImpl:61 - getFiles(): Requested input path doesn&apos;t have a file name or is not a valid file.
+</system-out>
+  </testcase>
+  <testcase time="0.019" classname="org.grapeCity.restAssignment.service.DirectoryServiceImplTest" name="testGetFileDetails_3 on instance testGetFileDetails_3">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_3(DirectoryServiceImplTest.java:167)
+</failure>
+    <system-out>01:00:42,159  WARN DirectoryServiceImpl:61 - getFiles(): Requested input path doesn&apos;t have a file name or is not a valid file.
+</system-out>
+  </testcase>
+  <testcase time="0.019" classname="org.grapeCity.restAssignment.service.DirectoryServiceImplTest" name="testGetFileDetails_4 on instance testGetFileDetails_4">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_4(DirectoryServiceImplTest.java:187)
+</failure>
+    <system-out>01:00:42,162  WARN DirectoryServiceImpl:61 - getFiles(): Requested input path doesn&apos;t have a file name or is not a valid file.
+</system-out>
+  </testcase>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetAbsolutePath_1 on instance testGetAbsolutePath_1"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetSize_1 on instance testGetSize_1"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetType_1 on instance testGetType_1"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testSetAbsolutePath_1 on instance testSetAbsolutePath_1"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testSetSize_1 on instance testSetSize_1"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testSetType_1 on instance testSetType_1"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetExecutable_1 on instance testGetExecutable_1"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetExecutable_2 on instance testGetExecutable_2"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetMtime_1 on instance testGetMtime_1"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetMtime_2 on instance testGetMtime_2"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetReadable_1 on instance testGetReadable_1"/>
+  <testcase time="0.024" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetReadable_2 on instance testGetReadable_2"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetWritable_1 on instance testGetWritable_1"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testGetWritable_2 on instance testGetWritable_2"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testSetExecutable_1 on instance testSetExecutable_1"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testSetMtime_1 on instance testSetMtime_1"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testSetReadable_1 on instance testSetReadable_1"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.domain.FilesTest" name="testSetWritable_1 on instance testSetWritable_1"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_1 on instance testCheckNullOrBlank_1"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_2 on instance testCheckNullOrBlank_2"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_3 on instance testCheckNullOrBlank_3"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_4 on instance testCheckNullOrBlank_4"/>
+  <testcase time="0.026" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_5 on instance testCheckNullOrBlank_5"/>
+  <testcase time="0.029" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_6 on instance testCheckNullOrBlank_6"/>
+  <testcase time="0.029" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_7 on instance testCheckNullOrBlank_7"/>
+  <testcase time="0.029" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_8 on instance testCheckNullOrBlank_8"/>
+  <testcase time="0.029" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_9 on instance testCheckNullOrBlank_9"/>
+  <testcase time="0.029" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_10 on instance testCheckNullOrBlank_10"/>
+  <testcase time="0.029" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_11 on instance testCheckNullOrBlank_11"/>
+  <testcase time="0.029" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_12 on instance testCheckNullOrBlank_12"/>
+  <testcase time="0.029" classname="org.grapeCity.restAssignment.utilities.UtilsTest" name="testCheckNullOrBlank_13 on instance testCheckNullOrBlank_13"/>
+  <testcase time="0.031" classname="org.grapeCity.restAssignment.domain.DirectoryTest" name="testGetAbsolutePath_1 on instance testGetAbsolutePath_1"/>
+  <testcase time="0.031" classname="org.grapeCity.restAssignment.domain.DirectoryTest" name="testGetDirectoryOrFiles_1 on instance testGetDirectoryOrFiles_1"/>
+  <testcase time="0.031" classname="org.grapeCity.restAssignment.domain.DirectoryTest" name="testGetDirectoryOrFiles_2 on instance testGetDirectoryOrFiles_2"/>
+  <testcase time="0.031" classname="org.grapeCity.restAssignment.domain.DirectoryTest" name="testGetSize_1 on instance testGetSize_1"/>
+  <testcase time="0.031" classname="org.grapeCity.restAssignment.domain.DirectoryTest" name="testGetType_1 on instance testGetType_1"/>
+  <testcase time="0.031" classname="org.grapeCity.restAssignment.domain.DirectoryTest" name="testSetAbsolutePath_1 on instance testSetAbsolutePath_1"/>
+  <testcase time="0.031" classname="org.grapeCity.restAssignment.domain.DirectoryTest" name="testSetSize_1 on instance testSetSize_1"/>
+  <testcase time="0.031" classname="org.grapeCity.restAssignment.domain.DirectoryTest" name="testSetType_1 on instance testSetType_1"/>
+</testsuite>

@@ -1,0 +1,895 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>40/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 19 01:00:42 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (137 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_1 on instance testGetDirectoryList_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)()'><b>testGetDirectoryList_1 on instance testGetDirectoryList_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</b><br>Test class: org.grapeCity.restAssignment.service.DirectoryServiceImplTest</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_1(DirectoryServiceImplTest.java:43)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16821027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16821027'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_1(DirectoryServiceImplTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.testng.junit.JUnitTestRunner.doRun(JUnitTestRunner.java:250)
+	at org.testng.junit.JUnitTestRunner.start(JUnitTestRunner.java:223)
+	at org.testng.junit.JUnitTestRunner.run(JUnitTestRunner.java:211)
+	at org.testng.TestRunner$1.run(TestRunner.java:673)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:999)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:704)
+	at org.testng.TestRunner.run(TestRunner.java:611)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:241)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1169)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1094)
+	at org.testng.TestNG.run(TestNG.java:1006)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>testGetDirectoryList_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_2 on instance testGetDirectoryList_2(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)()'><b>testGetDirectoryList_2 on instance testGetDirectoryList_2(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</b><br>Test class: org.grapeCity.restAssignment.service.DirectoryServiceImplTest</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_2(DirectoryServiceImplTest.java:63)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31278839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31278839'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_2(DirectoryServiceImplTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.testng.junit.JUnitTestRunner.doRun(JUnitTestRunner.java:250)
+	at org.testng.junit.JUnitTestRunner.start(JUnitTestRunner.java:223)
+	at org.testng.junit.JUnitTestRunner.run(JUnitTestRunner.java:211)
+	at org.testng.TestRunner$1.run(TestRunner.java:673)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:999)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:704)
+	at org.testng.TestRunner.run(TestRunner.java:611)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:241)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1169)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1094)
+	at org.testng.TestNG.run(TestNG.java:1006)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>testGetDirectoryList_2(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_3 on instance testGetDirectoryList_3(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)()'><b>testGetDirectoryList_3 on instance testGetDirectoryList_3(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</b><br>Test class: org.grapeCity.restAssignment.service.DirectoryServiceImplTest</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_3(DirectoryServiceImplTest.java:83)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace914691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace914691'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_3(DirectoryServiceImplTest.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.testng.junit.JUnitTestRunner.doRun(JUnitTestRunner.java:250)
+	at org.testng.junit.JUnitTestRunner.start(JUnitTestRunner.java:223)
+	at org.testng.junit.JUnitTestRunner.run(JUnitTestRunner.java:211)
+	at org.testng.TestRunner$1.run(TestRunner.java:673)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:999)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:704)
+	at org.testng.TestRunner.run(TestRunner.java:611)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:241)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1169)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1094)
+	at org.testng.TestNG.run(TestNG.java:1006)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>testGetDirectoryList_3(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_4 on instance testGetDirectoryList_4(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)()'><b>testGetDirectoryList_4 on instance testGetDirectoryList_4(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</b><br>Test class: org.grapeCity.restAssignment.service.DirectoryServiceImplTest</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_4(DirectoryServiceImplTest.java:103)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29167060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29167060'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_4(DirectoryServiceImplTest.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.testng.junit.JUnitTestRunner.doRun(JUnitTestRunner.java:250)
+	at org.testng.junit.JUnitTestRunner.start(JUnitTestRunner.java:223)
+	at org.testng.junit.JUnitTestRunner.run(JUnitTestRunner.java:211)
+	at org.testng.TestRunner$1.run(TestRunner.java:673)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:999)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:704)
+	at org.testng.TestRunner.run(TestRunner.java:611)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:241)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1169)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1094)
+	at org.testng.TestNG.run(TestNG.java:1006)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>testGetDirectoryList_4(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_1 on instance testGetFileDetails_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)()'><b>testGetFileDetails_1 on instance testGetFileDetails_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</b><br>Test class: org.grapeCity.restAssignment.service.DirectoryServiceImplTest</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_1(DirectoryServiceImplTest.java:127)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11924794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11924794'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_1(DirectoryServiceImplTest.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.testng.junit.JUnitTestRunner.doRun(JUnitTestRunner.java:250)
+	at org.testng.junit.JUnitTestRunner.start(JUnitTestRunner.java:223)
+	at org.testng.junit.JUnitTestRunner.run(JUnitTestRunner.java:211)
+	at org.testng.TestRunner$1.run(TestRunner.java:673)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:999)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:704)
+	at org.testng.TestRunner.run(TestRunner.java:611)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:241)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1169)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1094)
+	at org.testng.TestNG.run(TestNG.java:1006)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>testGetFileDetails_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_2 on instance testGetFileDetails_2(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)()'><b>testGetFileDetails_2 on instance testGetFileDetails_2(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</b><br>Test class: org.grapeCity.restAssignment.service.DirectoryServiceImplTest</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_2(DirectoryServiceImplTest.java:147)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20432397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20432397'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_2(DirectoryServiceImplTest.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.testng.junit.JUnitTestRunner.doRun(JUnitTestRunner.java:250)
+	at org.testng.junit.JUnitTestRunner.start(JUnitTestRunner.java:223)
+	at org.testng.junit.JUnitTestRunner.run(JUnitTestRunner.java:211)
+	at org.testng.TestRunner$1.run(TestRunner.java:673)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:999)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:704)
+	at org.testng.TestRunner.run(TestRunner.java:611)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:241)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1169)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1094)
+	at org.testng.TestNG.run(TestNG.java:1006)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>testGetFileDetails_2(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_3 on instance testGetFileDetails_3(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)()'><b>testGetFileDetails_3 on instance testGetFileDetails_3(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</b><br>Test class: org.grapeCity.restAssignment.service.DirectoryServiceImplTest</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_3(DirectoryServiceImplTest.java:167)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12067688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12067688'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_3(DirectoryServiceImplTest.java:167)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.testng.junit.JUnitTestRunner.doRun(JUnitTestRunner.java:250)
+	at org.testng.junit.JUnitTestRunner.start(JUnitTestRunner.java:223)
+	at org.testng.junit.JUnitTestRunner.run(JUnitTestRunner.java:211)
+	at org.testng.TestRunner$1.run(TestRunner.java:673)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:999)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:704)
+	at org.testng.TestRunner.run(TestRunner.java:611)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:241)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1169)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1094)
+	at org.testng.TestNG.run(TestNG.java:1006)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>testGetFileDetails_3(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_4 on instance testGetFileDetails_4(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)()'><b>testGetFileDetails_4 on instance testGetFileDetails_4(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</b><br>Test class: org.grapeCity.restAssignment.service.DirectoryServiceImplTest</td>
+<td><div><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_4(DirectoryServiceImplTest.java:187)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12926414", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12926414'><pre>junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_4(DirectoryServiceImplTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.testng.junit.JUnitTestRunner.doRun(JUnitTestRunner.java:250)
+	at org.testng.junit.JUnitTestRunner.start(JUnitTestRunner.java:223)
+	at org.testng.junit.JUnitTestRunner.run(JUnitTestRunner.java:211)
+	at org.testng.TestRunner$1.run(TestRunner.java:673)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:999)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:704)
+	at org.testng.TestRunner.run(TestRunner.java:611)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:292)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:241)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1169)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1094)
+	at org.testng.TestNG.run(TestNG.java:1006)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>testGetFileDetails_4(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_1 on instance testCheckNullOrBlank_1(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_1 on instance testCheckNullOrBlank_1(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_1(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_10 on instance testCheckNullOrBlank_10(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_10 on instance testCheckNullOrBlank_10(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_10(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_11 on instance testCheckNullOrBlank_11(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_11 on instance testCheckNullOrBlank_11(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_11(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_12 on instance testCheckNullOrBlank_12(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_12 on instance testCheckNullOrBlank_12(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_12(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_13 on instance testCheckNullOrBlank_13(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_13 on instance testCheckNullOrBlank_13(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_13(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_2 on instance testCheckNullOrBlank_2(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_2 on instance testCheckNullOrBlank_2(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_2(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_3 on instance testCheckNullOrBlank_3(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_3 on instance testCheckNullOrBlank_3(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_3(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_4 on instance testCheckNullOrBlank_4(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_4 on instance testCheckNullOrBlank_4(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_4(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_5 on instance testCheckNullOrBlank_5(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_5 on instance testCheckNullOrBlank_5(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_5(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_6 on instance testCheckNullOrBlank_6(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_6 on instance testCheckNullOrBlank_6(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_6(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_7 on instance testCheckNullOrBlank_7(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_7 on instance testCheckNullOrBlank_7(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_7(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_8 on instance testCheckNullOrBlank_8(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_8 on instance testCheckNullOrBlank_8(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_8(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.utilities.UtilsTest.testCheckNullOrBlank_9 on instance testCheckNullOrBlank_9(org.grapeCity.restAssignment.utilities.UtilsTest)()'><b>testCheckNullOrBlank_9 on instance testCheckNullOrBlank_9(org.grapeCity.restAssignment.utilities.UtilsTest)</b><br>Test class: org.grapeCity.restAssignment.utilities.UtilsTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckNullOrBlank_9(org.grapeCity.restAssignment.utilities.UtilsTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testDirectoryServiceImpl_1 on instance testDirectoryServiceImpl_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)()'><b>testDirectoryServiceImpl_1 on instance testDirectoryServiceImpl_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</b><br>Test class: org.grapeCity.restAssignment.service.DirectoryServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>testDirectoryServiceImpl_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetAbsolutePath_1 on instance testGetAbsolutePath_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetAbsolutePath_1 on instance testGetAbsolutePath_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetAbsolutePath_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.DirectoryTest.testGetAbsolutePath_1 on instance testGetAbsolutePath_1(org.grapeCity.restAssignment.domain.DirectoryTest)()'><b>testGetAbsolutePath_1 on instance testGetAbsolutePath_1(org.grapeCity.restAssignment.domain.DirectoryTest)</b><br>Test class: org.grapeCity.restAssignment.domain.DirectoryTest</td>
+<td></td>
+<td>0</td>
+<td>testGetAbsolutePath_1(org.grapeCity.restAssignment.domain.DirectoryTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.DirectoryTest.testGetDirectoryOrFiles_1 on instance testGetDirectoryOrFiles_1(org.grapeCity.restAssignment.domain.DirectoryTest)()'><b>testGetDirectoryOrFiles_1 on instance testGetDirectoryOrFiles_1(org.grapeCity.restAssignment.domain.DirectoryTest)</b><br>Test class: org.grapeCity.restAssignment.domain.DirectoryTest</td>
+<td></td>
+<td>0</td>
+<td>testGetDirectoryOrFiles_1(org.grapeCity.restAssignment.domain.DirectoryTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.DirectoryTest.testGetDirectoryOrFiles_2 on instance testGetDirectoryOrFiles_2(org.grapeCity.restAssignment.domain.DirectoryTest)()'><b>testGetDirectoryOrFiles_2 on instance testGetDirectoryOrFiles_2(org.grapeCity.restAssignment.domain.DirectoryTest)</b><br>Test class: org.grapeCity.restAssignment.domain.DirectoryTest</td>
+<td></td>
+<td>0</td>
+<td>testGetDirectoryOrFiles_2(org.grapeCity.restAssignment.domain.DirectoryTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetExecutable_1 on instance testGetExecutable_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetExecutable_1 on instance testGetExecutable_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetExecutable_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetExecutable_2 on instance testGetExecutable_2(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetExecutable_2 on instance testGetExecutable_2(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetExecutable_2(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetMtime_1 on instance testGetMtime_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetMtime_1 on instance testGetMtime_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetMtime_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetMtime_2 on instance testGetMtime_2(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetMtime_2 on instance testGetMtime_2(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetMtime_2(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetReadable_1 on instance testGetReadable_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetReadable_1 on instance testGetReadable_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetReadable_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetReadable_2 on instance testGetReadable_2(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetReadable_2 on instance testGetReadable_2(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetReadable_2(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetSize_1 on instance testGetSize_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetSize_1 on instance testGetSize_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetSize_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.DirectoryTest.testGetSize_1 on instance testGetSize_1(org.grapeCity.restAssignment.domain.DirectoryTest)()'><b>testGetSize_1 on instance testGetSize_1(org.grapeCity.restAssignment.domain.DirectoryTest)</b><br>Test class: org.grapeCity.restAssignment.domain.DirectoryTest</td>
+<td></td>
+<td>0</td>
+<td>testGetSize_1(org.grapeCity.restAssignment.domain.DirectoryTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetType_1 on instance testGetType_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetType_1 on instance testGetType_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetType_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.DirectoryTest.testGetType_1 on instance testGetType_1(org.grapeCity.restAssignment.domain.DirectoryTest)()'><b>testGetType_1 on instance testGetType_1(org.grapeCity.restAssignment.domain.DirectoryTest)</b><br>Test class: org.grapeCity.restAssignment.domain.DirectoryTest</td>
+<td></td>
+<td>0</td>
+<td>testGetType_1(org.grapeCity.restAssignment.domain.DirectoryTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetWritable_1 on instance testGetWritable_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetWritable_1 on instance testGetWritable_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetWritable_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testGetWritable_2 on instance testGetWritable_2(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testGetWritable_2 on instance testGetWritable_2(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testGetWritable_2(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testSetAbsolutePath_1 on instance testSetAbsolutePath_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testSetAbsolutePath_1 on instance testSetAbsolutePath_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testSetAbsolutePath_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.DirectoryTest.testSetAbsolutePath_1 on instance testSetAbsolutePath_1(org.grapeCity.restAssignment.domain.DirectoryTest)()'><b>testSetAbsolutePath_1 on instance testSetAbsolutePath_1(org.grapeCity.restAssignment.domain.DirectoryTest)</b><br>Test class: org.grapeCity.restAssignment.domain.DirectoryTest</td>
+<td></td>
+<td>0</td>
+<td>testSetAbsolutePath_1(org.grapeCity.restAssignment.domain.DirectoryTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testSetExecutable_1 on instance testSetExecutable_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testSetExecutable_1 on instance testSetExecutable_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testSetExecutable_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testSetMtime_1 on instance testSetMtime_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testSetMtime_1 on instance testSetMtime_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testSetMtime_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testSetReadable_1 on instance testSetReadable_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testSetReadable_1 on instance testSetReadable_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testSetReadable_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testSetSize_1 on instance testSetSize_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testSetSize_1 on instance testSetSize_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testSetSize_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.DirectoryTest.testSetSize_1 on instance testSetSize_1(org.grapeCity.restAssignment.domain.DirectoryTest)()'><b>testSetSize_1 on instance testSetSize_1(org.grapeCity.restAssignment.domain.DirectoryTest)</b><br>Test class: org.grapeCity.restAssignment.domain.DirectoryTest</td>
+<td></td>
+<td>0</td>
+<td>testSetSize_1(org.grapeCity.restAssignment.domain.DirectoryTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testSetType_1 on instance testSetType_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testSetType_1 on instance testSetType_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testSetType_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.DirectoryTest.testSetType_1 on instance testSetType_1(org.grapeCity.restAssignment.domain.DirectoryTest)()'><b>testSetType_1 on instance testSetType_1(org.grapeCity.restAssignment.domain.DirectoryTest)</b><br>Test class: org.grapeCity.restAssignment.domain.DirectoryTest</td>
+<td></td>
+<td>0</td>
+<td>testSetType_1(org.grapeCity.restAssignment.domain.DirectoryTest)</td></tr>
+<tr>
+<td title='org.grapeCity.restAssignment.domain.FilesTest.testSetWritable_1 on instance testSetWritable_1(org.grapeCity.restAssignment.domain.FilesTest)()'><b>testSetWritable_1 on instance testSetWritable_1(org.grapeCity.restAssignment.domain.FilesTest)</b><br>Test class: org.grapeCity.restAssignment.domain.FilesTest</td>
+<td></td>
+<td>0</td>
+<td>testSetWritable_1(org.grapeCity.restAssignment.domain.FilesTest)</td></tr>
+</table><p>
+</body>
+</html>

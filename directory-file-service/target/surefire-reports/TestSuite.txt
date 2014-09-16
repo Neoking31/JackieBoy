@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 48, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.567 sec <<< FAILURE!
+testGetDirectoryList_1 on instance testGetDirectoryList_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)  Time elapsed: 0.01 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_1(DirectoryServiceImplTest.java:43)
+testGetDirectoryList_2 on instance testGetDirectoryList_2(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)  Time elapsed: 0.01 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_2(DirectoryServiceImplTest.java:63)
+testGetDirectoryList_3 on instance testGetDirectoryList_3(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_3(DirectoryServiceImplTest.java:83)
+testGetDirectoryList_4 on instance testGetDirectoryList_4(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)  Time elapsed: 0.014 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_4(DirectoryServiceImplTest.java:103)
+testGetFileDetails_1 on instance testGetFileDetails_1(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_1(DirectoryServiceImplTest.java:127)
+testGetFileDetails_2 on instance testGetFileDetails_2(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_2(DirectoryServiceImplTest.java:147)
+testGetFileDetails_3 on instance testGetFileDetails_3(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)  Time elapsed: 0.019 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_3(DirectoryServiceImplTest.java:167)
+testGetFileDetails_4 on instance testGetFileDetails_4(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)(org.grapeCity.restAssignment.service.DirectoryServiceImplTest)  Time elapsed: 0.019 sec  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNotNull(Assert.java:220)
+	at junit.framework.Assert.assertNotNull(Assert.java:213)
+	at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_4(DirectoryServiceImplTest.java:187)

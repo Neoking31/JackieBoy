@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]" junit="true">
+  <test name="Command line test(failed)" junit="true" preserve-order="false">
+    <classes>
+      <class name="org.grapeCity.restAssignment.service.DirectoryServiceImplTest">
+        <methods>
+          <include name="testGetDirectoryList_2"/>
+          <include name="testGetDirectoryList_1"/>
+          <include name="testGetFileDetails_4"/>
+          <include name="testGetFileDetails_3"/>
+          <include name="testGetDirectoryList_4"/>
+          <include name="testGetFileDetails_1"/>
+          <include name="testGetDirectoryList_3"/>
+          <include name="testGetFileDetails_2"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

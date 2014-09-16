@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">40</td><td class="numi">40</td><td class="numi">0</td><td class="numi_attn">8</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Command line test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="8">org.grapeCity.restAssignment.service.DirectoryServiceImplTest<td><a href="#m1"><b>testGetFileDetails_3</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m2"><b>testGetFileDetails_4</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m3"><b>testGetDirectoryList_3</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m4"><b>testGetDirectoryList_4</b>  </a></td><td class="numi">1</td><td class="numi">3</td></tr><tr class="failedodd"><td><a href="#m5"><b>testGetFileDetails_2</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m6"><b>testGetDirectoryList_2</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr><tr class="failedodd"><td><a href="#m7"><b>testGetFileDetails_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m8"><b>testGetDirectoryList_1</b>  </a></td><td class="numi">1</td><td class="numi">8</td></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m9"><b>testGetMtime_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="2">org.grapeCity.restAssignment.utilities.UtilsTest<td><a href="#m10"><b>testCheckNullOrBlank_9</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m11"><b>testCheckNullOrBlank_7</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">org.grapeCity.restAssignment.domain.DirectoryTest<td><a href="#m12"><b>testSetType_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m13"><b>testGetSize_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">org.grapeCity.restAssignment.utilities.UtilsTest<td><a href="#m14"><b>testCheckNullOrBlank_13</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m15"><b>testGetType_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m16"><b>testSetSize_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="2">org.grapeCity.restAssignment.domain.DirectoryTest<td><a href="#m17"><b>testGetType_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m18"><b>testSetSize_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="4">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m19"><b>testGetMtime_2</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m20"><b>testGetReadable_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m21"><b>testGetReadable_2</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m22"><b>testSetMtime_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="2">org.grapeCity.restAssignment.utilities.UtilsTest<td><a href="#m23"><b>testCheckNullOrBlank_11</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m24"><b>testCheckNullOrBlank_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m25"><b>testGetAbsolutePath_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">org.grapeCity.restAssignment.service.DirectoryServiceImplTest<td><a href="#m26"><b>testDirectoryServiceImpl_1</b>  </a></td><td class="numi">1</td><td class="numi">88</td></tr>
+<tr class="passedodd"><td rowspan="2">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m27"><b>testSetReadable_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m28"><b>testGetExecutable_2</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">org.grapeCity.restAssignment.domain.DirectoryTest<td><a href="#m29"><b>testGetDirectoryOrFiles_2</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m30"><b>testGetWritable_2</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">org.grapeCity.restAssignment.domain.DirectoryTest<td><a href="#m31"><b>testGetDirectoryOrFiles_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m32"><b>testSetType_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="2">org.grapeCity.restAssignment.utilities.UtilsTest<td><a href="#m33"><b>testCheckNullOrBlank_8</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedeven"><td><a href="#m34"><b>testCheckNullOrBlank_12</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m35"><b>testGetWritable_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">org.grapeCity.restAssignment.utilities.UtilsTest<td><a href="#m36"><b>testCheckNullOrBlank_6</b>  </a></td><td class="numi">1</td><td class="numi">3</td></tr>
+<tr class="passedodd"><td rowspan="1">org.grapeCity.restAssignment.domain.DirectoryTest<td><a href="#m37"><b>testGetAbsolutePath_1</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+<tr class="passedeven"><td rowspan="1">org.grapeCity.restAssignment.utilities.UtilsTest<td><a href="#m38"><b>testCheckNullOrBlank_5</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m39"><b>testSetAbsolutePath_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">org.grapeCity.restAssignment.utilities.UtilsTest<td><a href="#m40"><b>testCheckNullOrBlank_4</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">org.grapeCity.restAssignment.domain.DirectoryTest<td><a href="#m41"><b>testSetAbsolutePath_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">org.grapeCity.restAssignment.utilities.UtilsTest<td><a href="#m42"><b>testCheckNullOrBlank_2</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m43"><b>testSetExecutable_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m44"><b>testGetExecutable_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">org.grapeCity.restAssignment.utilities.UtilsTest<td><a href="#m45"><b>testCheckNullOrBlank_10</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="2">org.grapeCity.restAssignment.domain.FilesTest<td><a href="#m46"><b>testSetWritable_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m47"><b>testGetSize_1</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedeven"><td rowspan="1">org.grapeCity.restAssignment.utilities.UtilsTest<td><a href="#m48"><b>testCheckNullOrBlank_3</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+</table>
+<h1>Command line test</h1>
+<a id="m1"></a><h2>org.grapeCity.restAssignment.service.DirectoryServiceImplTest:testGetFileDetails_3</h2>
+<div style="padding-left:3em">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:220)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:213)
+<br/>at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_3(DirectoryServiceImplTest.java:167)
+<br/>42 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>org.grapeCity.restAssignment.service.DirectoryServiceImplTest:testGetFileDetails_4</h2>
+<div style="padding-left:3em">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:220)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:213)
+<br/>at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_4(DirectoryServiceImplTest.java:187)
+<br/>42 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>org.grapeCity.restAssignment.service.DirectoryServiceImplTest:testGetDirectoryList_3</h2>
+<div style="padding-left:3em">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:220)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:213)
+<br/>at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_3(DirectoryServiceImplTest.java:83)
+<br/>42 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>org.grapeCity.restAssignment.service.DirectoryServiceImplTest:testGetDirectoryList_4</h2>
+<div style="padding-left:3em">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:220)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:213)
+<br/>at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_4(DirectoryServiceImplTest.java:103)
+<br/>42 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>org.grapeCity.restAssignment.service.DirectoryServiceImplTest:testGetFileDetails_2</h2>
+<div style="padding-left:3em">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:220)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:213)
+<br/>at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_2(DirectoryServiceImplTest.java:147)
+<br/>42 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>org.grapeCity.restAssignment.service.DirectoryServiceImplTest:testGetDirectoryList_2</h2>
+<div style="padding-left:3em">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:220)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:213)
+<br/>at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_2(DirectoryServiceImplTest.java:63)
+<br/>42 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>org.grapeCity.restAssignment.service.DirectoryServiceImplTest:testGetFileDetails_1</h2>
+<div style="padding-left:3em">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:220)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:213)
+<br/>at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetFileDetails_1(DirectoryServiceImplTest.java:127)
+<br/>42 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>org.grapeCity.restAssignment.service.DirectoryServiceImplTest:testGetDirectoryList_1</h2>
+<div style="padding-left:3em">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:220)
+<br/>at junit.framework.Assert.assertNotNull(Assert.java:213)
+<br/>at org.grapeCity.restAssignment.service.DirectoryServiceImplTest.testGetDirectoryList_1(DirectoryServiceImplTest.java:43)
+<br/>42 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetMtime_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_9</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_7</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>org.grapeCity.restAssignment.domain.DirectoryTest:testSetType_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>org.grapeCity.restAssignment.domain.DirectoryTest:testGetSize_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_13</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetType_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testSetSize_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>org.grapeCity.restAssignment.domain.DirectoryTest:testGetType_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>org.grapeCity.restAssignment.domain.DirectoryTest:testSetSize_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m19"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetMtime_2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m20"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetReadable_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m21"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetReadable_2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m22"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testSetMtime_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m23"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_11</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m24"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m25"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetAbsolutePath_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m26"></a><h2>org.grapeCity.restAssignment.service.DirectoryServiceImplTest:testDirectoryServiceImpl_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m27"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testSetReadable_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m28"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetExecutable_2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m29"></a><h2>org.grapeCity.restAssignment.domain.DirectoryTest:testGetDirectoryOrFiles_2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m30"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetWritable_2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m31"></a><h2>org.grapeCity.restAssignment.domain.DirectoryTest:testGetDirectoryOrFiles_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m32"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testSetType_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m33"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_8</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m34"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_12</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m35"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetWritable_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m36"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_6</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m37"></a><h2>org.grapeCity.restAssignment.domain.DirectoryTest:testGetAbsolutePath_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m38"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_5</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m39"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testSetAbsolutePath_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m40"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_4</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m41"></a><h2>org.grapeCity.restAssignment.domain.DirectoryTest:testSetAbsolutePath_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m42"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m43"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testSetExecutable_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m44"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetExecutable_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m45"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_10</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m46"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testSetWritable_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m47"></a><h2>org.grapeCity.restAssignment.domain.FilesTest:testGetSize_1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m48"></a><h2>org.grapeCity.restAssignment.utilities.UtilsTest:testCheckNullOrBlank_3</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
